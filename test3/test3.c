@@ -5,6 +5,7 @@
 int main(int argc, char *argv[])
 {
     // обьявление переменных
+	// изменение
 
     float a, b;
     long int d;
