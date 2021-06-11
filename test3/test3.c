@@ -14,10 +14,21 @@ int main(int argc, char *argv[])
 
     	do
         {
+
+
+    	// БЛОК 1
+    	//здесь пользователь выбирает какой калькулятор он будет использовать
         printf("Choose calculator: \n");
 		printf("1 - vectors, 2 - numbers\n");
 		scanf("%s", &choice);
+		// КОНЕЦ БЛОКА 1
 
+
+			// БЛОК 2
+			//Здесь описаны  векторные операции.
+			//Пользователь вводит координаты вектора,
+			//которые записываются в выделенные ячейки памяти.
+			//После вывода результата, ячейки очищаюся.
 			if (choice == '1')
 				{
 					printf("Enter size of the vectors: \n");
@@ -71,8 +82,13 @@ int main(int argc, char *argv[])
 					free(v2);
 					free(res);
 				}
+			// КОНЕЦ БЛОКА 2
 
 
+
+			// БЛОК 3
+			//здесь описаны арифметические операции
+			//для реализаци некоторых функций была подключена библиотека math.h
 			else if (choice == '2')
 				{
 					printf("Write first number: ");
@@ -83,6 +99,9 @@ int main(int argc, char *argv[])
 					printf("@ extracts the square root from the number\n");
 					printf("Please, choose an operation: ");
 					scanf("%s", &c);
+
+
+
 
 
 					if (c == '+' || c == '-' || c == '*' || c == '/')
@@ -166,6 +185,7 @@ int main(int argc, char *argv[])
 					}
 
 				}
+			// КОНЕЦ БЛОКА 3
 
 
 		printf("Do you want to continue? (y/n)\n");
