@@ -1,0 +1,9 @@
+Choose calculator: 
+v - vectors, n - numbers
+Enter size of the vectors: 
+Enter first vector: 
+Enter second vector: 
+Choose an operation: +, -, *: 
+-3.000 
+-5.000 
+1.000 

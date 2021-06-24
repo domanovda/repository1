@@ -14,16 +14,16 @@ int main(int argc, char *argv[])
     	do
         {
 
-
+    	// просьба ввести названия файлов
     	printf("Enter the name of the input file in the format (name.txt): \n");
     	scanf("%s", &inp);
     	printf("Enter the name of the output file in the format (name.txt): \n");
     	scanf("%s", &outp);
 
-
+    	// создание файла для работы с данными
     	FILE *input, *output;
     	input = fopen(inp,"r");
-    	output = fopen(outp,"a");
+    	output = fopen(outp,"w");
 
     	// БЛОК 1
     	//здесь пользователь выбирает какой калькулятор он будет использовать
@@ -188,6 +188,7 @@ int main(int argc, char *argv[])
 
 				}
 			// КОНЕЦ БЛОКА 3
+
 		fclose(input);
 		fclose(output);
 
